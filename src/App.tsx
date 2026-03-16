@@ -1,5 +1,6 @@
-import { useState, useRef, FormEvent, ChangeEvent } from "react";
-import "./App.css";
+import { useState, useRef } from "react";
+import type { FormEvent, ChangeEvent } from "react";
+import "./App.css";    
 interface FeedbackData {
   Student_name: string;
   StudentID: string;
@@ -52,6 +53,8 @@ function App() {
       console.log("Uncontrolled Form Data:", data);
       alert("Check the console for submitted data.");
     }
+
+
   };
   return (
     <div style={{ padding: "40px", fontFamily: "Arial" }}>
